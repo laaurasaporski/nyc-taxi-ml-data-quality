@@ -8,7 +8,7 @@ num modelo de Machine Learning — usando os dados de táxi amarelo de NYC (jan�
 
 ---
 
-## 🧪 O Experimento
+##  O Experimento
 
 Treinei o **mesmo modelo** (Random Forest), com os **mesmos parâmetros**, na **mesma divisão
 treino/teste** — a única variável foi a **qualidade dos dados de entrada**.
@@ -24,7 +24,7 @@ treino/teste** — a única variável foi a **qualidade dos dados de entrada**.
 
 ---
 
-## 📊 Resultados
+##  Resultados
 
 | Métrica | Dado Sujo | Dado Limpo | Melhora |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Erro acumulado evitado/mês:   $4.628.235
 
 ---
 
-## 🔬 MLflow — Rastreabilidade do Experimento
+##  MLflow — Rastreabilidade do Experimento
 
 Os dois runs foram rastreados com **MLflow** dentro do Databricks, garantindo que o
 experimento seja **reproduzível, auditável e comparável**.
@@ -64,7 +64,7 @@ O que foi logado em cada run:
 | **R²** | 0.66 | **0.706** |
 | **Modelo salvo** | ✅ artifact | ✅ artifact |
 
-> 💬 *"O MLflow prova que os parâmetros foram idênticos nos dois runs.
+>  *"O MLflow prova que os parâmetros foram idênticos nos dois runs.
 > A diferença nas métricas não é acaso — é o custo mensurável do dado sujo."*
 
 Os runs, artefatos e modelos ficam persistidos no Databricks (não no GitHub).
@@ -73,7 +73,7 @@ e selecione os dois runs para comparação automática.
 
 ---
 
-## 🔍 Por que os dados são diferentes?
+##  Por que os dados são diferentes?
 
 O dado sujo (Bronze) contém problemas reais identificados na camada de qualidade:
 
@@ -88,7 +88,7 @@ com os reprovados isolados em quarentena — não descartados, auditáveis.
 
 ---
 
-## 🛠️ Stack
+##  Stack
 
 `Databricks Free Edition` · `PySpark` · `Delta Lake` · `MLflow` · `scikit-learn`
 `Random Forest Regressor` · `DAMA-DMBOK` · `Arquitetura Medallion`
