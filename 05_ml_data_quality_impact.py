@@ -52,12 +52,12 @@ print(pdf_sujo["total_amount"].describe().round(2))
 print("\nEstatísticas do dado LIMPO (total_amount):")
 print(pdf_limpo["total_amount"].describe().round(2))
 
-# COMMAND ----------
+
 
 # MAGIC %md
-# MAGIC Antes mesmo de treinar qualquer modelo, os dados já contam histórias diferentes. O dado sujo tem corridas com valor de -$203,70, o modelo vai aprender esse padrão impossível e embutir esse erro em todas as previsões.
 
-# COMMAND ----------
+
+
 
 import mlflow
 import mlflow.sklearn
@@ -117,7 +117,7 @@ print("\nTreinando modelo com DADO LIMPO...")
 res_limpo = treina_e_loga(pdf_limpo, "dado_limpo_gold")
 
 
-# COMMAND ----------
+
 
 # MAGIC %md
 # MAGIC
