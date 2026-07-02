@@ -1,5 +1,5 @@
 # Databricks notebook source
-# ── Configuração ──────────────────────────────────────────────────────
+
 CATALOG = "workspace"
 SCHEMA  = "ifood_case"
 SEED    = 42
@@ -28,7 +28,7 @@ print(f"Dado SUJO  (Bronze): {bronze.count():,} registros")
 print(f"Dado LIMPO (Gold):   {gold.count():,} registros")
 print(f"\nDiferença: {bronze.count() - gold.count():,} registros removidos pela qualidade")
 
-# COMMAND ----------
+
 
 import pandas as pd
 import numpy as np
