@@ -3,8 +3,7 @@
 Experimento controlado que **prova empiricamente** o impacto da qualidade de dados
 num modelo de Machine Learning — usando os dados de táxi amarelo de NYC (jan–mai/2023).
 
-> **A pergunta central:** um modelo treinado em dado sujo vs dado limpo — qual a diferença real?
-> A resposta está nos números abaixo.
+
 
 ---
 
@@ -62,7 +61,7 @@ O que foi logado em cada run:
 | **RMSE** | 13.74 | **12.23** |
 | **MAE** | 5.941 | **5.6** |
 | **R²** | 0.66 | **0.706** |
-| **Modelo salvo** | ✅ artifact | ✅ artifact |
+| **Modelo salvo** |  artifact | artifact |
 
 >  *"O MLflow prova que os parâmetros foram idênticos nos dois runs.
 > A diferença nas métricas não é acaso — é o custo mensurável do dado sujo."*
